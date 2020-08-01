@@ -1,0 +1,207 @@
+body {
+  box-sizing: border-box;
+  background: #ccc;
+}
+
+#header {
+  max-width: 100%;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  position: fixed;
+  background: #ccc;
+  top: 0px;
+}
+
+#header-img {
+  width: 30%;
+}
+
+nav ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  right: 100px;
+  top: 0;
+}
+
+nav li{
+  list-style: none;
+  padding-left: 70px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+#main{ 
+  margin: 0 10%;
+  margin-top: 80px;
+}
+
+#main-header {
+  text-align: center;
+}
+input {
+  margin: 1rem;
+}
+
+#email {
+  padding: 8px;
+  width: 400px;
+}
+
+#submit {
+  padding: 5px;
+  padding-left: 10px;
+  width: 120px;
+  background: yellow;
+  border: 0;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+#submit:hover {
+  background: orange;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(100px 1fr);
+  grid-gap: 40px;
+  grid-auto-rows: minmax(100px, auto);
+  margin-top: 40px;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.item-1 {
+  grid-column: 1;
+  grid-row: 1;
+}
+.item-2 { 
+  grid-column: 2;
+  grid-row: 1;
+}
+.item-3 {
+  grid-column: 1;
+  grid-row: 2;
+}
+.item-4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.item-5 {
+  grid-column: 1;
+  grid-row: 3;
+}
+.item-6 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.video {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.item-collections {
+  width: 250px;
+  line-height: 30px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  background: white;
+  margin: 10px;
+}
+
+.item-collections p {
+  font-weight: bold;
+}
+
+.item-collections h3 {
+  background: grey;
+  margin: 0;
+  padding:15px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.item-collections ul{
+  margin: 0;
+  padding: 0;
+}
+
+.item-collections ul li{
+  list-style: none;
+}
+
+.item-collections .btn{
+  margin: 20px;
+  padding: 5px;
+  padding-left: 10px;
+  width: 80px;
+  background: yellow;
+  border: 0;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: orange;
+}
+
+.footer {
+  background: grey;
+  margin: 0 10%;
+  margin-top: 40px;
+}
+
+.footer-wrap {
+  position: relative;
+  float: right;
+  right: 10px;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer li {
+  list-style: none;
+}
+
+@media screen and (min-width: 960px) {
+  #header {
+    width: 100%;
+  }
+  .item-collections {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #header {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+  } 
+}
